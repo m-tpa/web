@@ -1,0 +1,38 @@
+body{
+    background-color: orange;
+}
+.container{
+    width:980px; margin: auto; border: 8px solid purple; 
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.box{
+    background: white; padding: 10px 20px;
+    text-align: center; font-size: 22px;
+    margin: 15px 0;
+    border: 9px solid yellow;
+}
+.menu{
+    clear: both;
+}
+.cleft{
+    width: 23%; float: left;  height: 500px;
+}
+.cmid{
+    width: 46%; float: left; height: 500px;
+    margin-left: 44px;
+}
+.cright{
+    width: 23%; float: right;  height: 500px;
+}
+*
+{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.footer{
+    clear: both;
+}

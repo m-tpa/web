@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var products=[
+    {id:1, category:"store", name:"suzuki"},
+    {id:2, category:"mobile", name:"apple"},
+    {id:3, category:"laptop", name:"dell"},   
+    {id:4, category:"wifi", name:"worldlink"},
+    {id:5, category:"watch", name:"apple"},
+    ]
+    console.log(products)
+    var apple=products.filter((items)=>items.name=="apple")
+    console.log(apple)
+    {apple.map((a)=>document.write(`<h1>${a.name}</h1>`))}
+   </script> 
+</body>
+</html>

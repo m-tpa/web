@@ -1,0 +1,14 @@
+.c{
+    width: 200px; height: 200px;
+    border: 2px solid blue;
+}
+.box3
+{
+    float: right;
+}
+.box1{
+    float: left;
+}
+.box4{
+    float: right; clear: both;
+}

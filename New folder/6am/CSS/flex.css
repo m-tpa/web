@@ -1,0 +1,12 @@
+.a
+{
+    display: flex;
+    background: pink;
+    justify-content: start;
+    /* start end center space-between */
+    align-items: center;
+     /* start end center */
+     justify-content: space-around;
+     justify-content: space-between;
+     justify-content:space-evenly;
+} 

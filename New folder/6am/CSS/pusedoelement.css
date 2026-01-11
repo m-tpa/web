@@ -1,0 +1,32 @@
+height::before
+{
+content: arrow;
+color: pink;
+background: skyblue;
+}
+h3::after 
+{
+    content: '✅';
+     margin: 0 10; /*checkbox html symbol/ */ 
+}
+p::first-letter
+{
+    font-size: 90px;
+}
+p::first-line
+{
+    background: skyblue;
+}
+::marker
+{
+    color: orange;
+}
+::selection
+{
+    background: green;
+    color: pink;
+}
+::placeholder
+{
+  color: pink;
+}

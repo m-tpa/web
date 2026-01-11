@@ -1,0 +1,32 @@
+h1
+{
+background: $a;
+border: 2px solid $b;
+width: $size;
+height: $size;
+}
+
+
+.box
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border:2px solid $a;
+}
+
+
+nav{
+    background:yellow;
+    ul 
+    {
+        list-style: none;
+        a{
+            text-decoration: none;
+            &:hover
+            {
+                color:yellow;
+            }
+        }
+    }
+}

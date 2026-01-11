@@ -1,0 +1,30 @@
+
+.box{
+    background: purple;
+    width: 300px;
+    height: 200px;
+    border-width: 5px;
+    border-color: rgb(17, 84, 178);
+    border-style: dashed;
+}
+.box1{
+    background-color: aqua;
+    width: 200px;
+    height: 120px;
+    border: 5px solid red;
+}
+.box2
+{
+    width: 200px; height: 200px;
+    background: orange;
+    border-left: 8px solid red;
+    border-bottom: 10px dotted black;
+    border-right: 10px groove green;
+    
+}
+.arrow
+{
+    border:30px solid;
+    border-color: blue transparent transparent transparent;
+    width: 0;
+}

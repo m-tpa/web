@@ -1,0 +1,48 @@
+.box
+{
+    width: 200px; height: 200px;
+    background: purple;
+    animation-name: colorbg;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    position: relative;
+    animation-direction:alternate ;
+    animation-fill-mode:forwards ;
+
+
+}
+@keyframes colorbg{
+    0% , from{background: blue; left: 0;}
+    50%{ background: green;}
+    100% ,to{ background:aqua;left: 500px; }
+}
+
+.box1
+{
+    width:100px ; height: 100px; background:burlywood ;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    100%{transform: rotate(360deg);}
+}
+.ma{
+    width: 100px;height: 100px; border: 2px solid #000; 
+    position: relative; animation: mm 5s 0s forwards,blink 2s 6s infinite;
+}
+
+@keyframes mm{
+    0%{left: 0; }100%{ left: 500px;}
+
+}
+.a{animation-timing-function: linear;}
+.b{animation-timing-function: ease;}
+.c{animation-timing-function: ease-in;}
+.d{animation-timing-function: ease-out;}
+.e{animation-timing-function: ease-in-out;}
+.f{animation-timing-function:steps(10, start);}
+
+
+@keyframes blink{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}

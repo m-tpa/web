@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ height:1990px;}
+        header{ background: purple; padding: 120px; position: fixed; width:100%; transition: 0,.9s}
+        .abc{ background: blue; padding: 80px;}
+    </style>
+</head>
+<body>
+    <header> </header>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(this).scrollTop()> 200)
+        {
+            $("header").addClass('abc')
+        }
+        else
+        {
+            $("header").removeClass('abc')
+        }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/*p:first-child {
+    background: blueviolet !important;
+}
+p:last-child{
+    background: skyblue !important;
+}
+p:nth-child(odd){
+    background: aqua;
+}
+p:nth-child(even){
+    background: red;
+}
+a:visited{
+    color:rgb(13, 107, 11);
+}
+a:link{
+    color:rgb(229, 132, 13);
+}
+a:hover{
+    color:rgb(230, 16, 51);
+}
+a:active{
+    color:rgb(126, 16, 229);
+}
+:root{
+    --brand:aqua;
+    --size:500px;
+    --height:200px;
+    
+    
+    }
+    h1{
+        background: var(--brand);
+        height:var(--height);
+        width:var(--size);
+    }
+    input:focus{
+        border:2px solid violet;
+    }
+    input:required{
+        outline:none;
+    }
+    input:read-only{
+        background: palegreen;
+    }
+    .a p::first-letter{
+        color:black;
+        font-size: 70px;
+    }
+    .a p::first-line{
+        background: aqua;
+    }
+    .a p::selection{
+    background: yellowgreen;
+    color:beige;
+    }
+    ::marker{
+        color:blue;
+    }
+    input::placeholder{
+        color:aqua;
+    }
+    h2::before{
+        content:'hi';
+        background: red;
+    }
+    h2::after{
+        content:"moon";
+        background:pink;
+    }*/
+
+    .a p{
+        color:rgb(120, 6, 212);
+     }
+     .a > p{
+        background: red;
+     }
+     .a + p{
+        background:rgb(13, 166, 243);
+     }
+     .a ~ p{
+        color:rgb(13, 242, 13);
+     }

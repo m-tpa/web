@@ -1,0 +1,24 @@
+.box{
+    width: 250px; height: 250px;
+    background: red;
+    border: 30px dotted yellow;
+    border-radius: 50%;
+    outline: 20px dotted orange;
+    outline-offset: 30px;
+}
+.a{
+    width: 300px;
+    background: yellow;
+    color: azure;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    margin: 60px;
+}
+.b{
+    width: 300px;
+    height: 200px; background: green;
+    margin-left: auto;
+    margin-right: auto;
+}
