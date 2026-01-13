@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Selectors Combined Example</title>
+    <style>
+        /* Element Selector */
+        p {
+            color:blue;
+            font-size: 16px;
+        }
+
+        /* ID Selector */
+        #select {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Class Selector */
+        .pin {
+            background-color: yellow;
+            color: green;
+            font-size: 16px;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: purple;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Heading styled with Group Selector</h2>
+    <h3>Sub-heading also styled with Group Selector</h3>
+
+    <p>This paragraph uses Element Selector.</p>
+    <p id="select">This paragraph uses ID Selector </p>
+    <p class="pin">This paragraph uses Class Selector</p>
+
+    <input type="text" placeholder="Text input using Attribute">
+    <input type="password" placeholder="Password is not styled">
+
+</body>
+</html>
