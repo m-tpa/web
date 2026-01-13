@@ -1,0 +1,53 @@
+<!-- Create a list and style its items using CSS pseudo-classes like :hover, :first-child, :last-child, and :nth-child(). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Pseudo Classes Example</title>
+    <style>
+        ul {
+            list-style-type: square;
+            width: 300px;
+            margin: auto;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            background-color: lightgray;
+            margin-bottom: 5px;
+        }
+ 
+        li:hover {
+            background-color: lightblue;
+            color: white;
+        }
+
+         
+        li:first-child {
+            font-weight: bold;
+        }
+
+         
+        li:last-child {
+            font-style: italic;
+        }
+        li:nth-child(2) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">CSS Pseudo Classes Example</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+</body>
+</html>

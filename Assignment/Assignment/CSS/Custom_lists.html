@@ -1,0 +1,43 @@
+<!-- Create ordered and unordered lists and style them using custom bullets or counters in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Custom Lists</title>
+    <style>
+        
+        ul.custom {
+            list-style: none;  
+            padding: 0;
+        }
+
+        ul.custom li::before {
+            content: "• ";  
+            color: red;
+        }
+        ol.custom {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">CSS Custom Lists Example</h2>
+
+    <h3>Unordered List:</h3>
+    <ul class="custom">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Ordered List:</h3>
+    <ol class="custom">
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+    </ol>
+
+</body>
+</html>
