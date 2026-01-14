@@ -1,0 +1,41 @@
+<!-- Create buttons or input fields and handle events like onclick, onmouseover, and onchange using JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Handling Events Example</title>
+</head>
+<body>
+
+    <h2>JS Event Handling Example</h2>
+
+    <!-- Click Event -->
+    <button onclick="showMessage()">Click Me</button>
+
+    <br><br>
+
+    <!-- Mouseover Event -->
+    <p onmouseover="hoverMessage()" style="width:200px; padding:10px; border:1px solid black;">
+        Hover over me
+    </p>
+
+    <!-- Input Change Event -->
+    <input type="text" placeholder="Type something" onchange="inputChanged(this.value)">
+
+    <script>
+        function showMessage() {
+            alert("Button Clicked!");
+        }
+
+        function hoverMessage() {
+            alert("Mouse is over the paragraph!");
+        }
+
+        function inputChanged(value) {
+            alert("You typed: " + value);
+        }
+    </script>
+
+</body>>
+</html>

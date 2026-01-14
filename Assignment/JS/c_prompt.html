@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program that takes user input using prompt() and displays it back. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JS Prompt Example</title>
+</head>
+<body>
+
+    <h2>JS Prompt Example</h2>
+
+    <button onclick="askName()">Enter Your Name</button>
+
+    <script>
+        function askName() {
+            let name = prompt("Please enter your name:");
+            if(name) {
+                alert("Hello " + name + "! Welcome!");
+            } else {
+                alert("You did not enter your name.");
+            }
+        }
+    </script>
+
+</body>
+</html>

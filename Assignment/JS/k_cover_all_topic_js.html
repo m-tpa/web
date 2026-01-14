@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Topics Example</title>
+</head>
+<body>
+
+    <h1 style="text-align:center;">JavaScript Topics Examples</h1>
+
+    <hr>
+
+    <!-- a_console_log -->
+    <h2>1. Console Log</h2>
+    <p>Check the console</p>
+    <script>
+        console.log("Hello, this is a console log message!");
+    </script>
+
+    <hr>
+
+    <!-- b_alert -->
+    <h2>2. Alert</h2>
+    <button onclick="alert('Hello! This is an alert message.')">Click Me (Alert)</button>
+
+    <hr>
+
+    <!-- c_prompt -->
+    <h2>3. Prompt</h2>
+    <button onclick="let name = prompt('Enter your name:'); if(name){ alert('Hello ' + name + '!'); }">Enter Name</button>
+
+    <hr>
+
+    <!-- d_html_elements -->
+    <h2>4. HTML Elements</h2>
+    <p id="para">This paragraph will change when button clicked.</p>
+    <button onclick="document.getElementById('para').textContent='Paragraph Changed!'; document.getElementById('para').style.color='blue';">Change Paragraph</button>
+
+    <hr>
+
+    <!-- e_how_to_use_js_with_html -->
+    <h2>5. JS with HTML</h2>
+    <button onclick="alert('Inline JS')">Inline JS</button>
+    <button onclick="internalJS()">Internal JS</button>
+    <button onclick="externalJS()">External JS</button>
+
+    <script>
+        function internalJS() {
+            alert("Internal JS");
+        }
+    </script>
+    <script src="external.js"></script> <!-- For External JS create external.js file with function externalJS() { alert('External JS'); } -->
+
+    <hr>
+
+    <!-- f_js_variables -->
+    <h2>6. Variables</h2>
+    <script>
+        let nameVar = "Manika";
+        let ageVar = 20;
+        document.write("<p>Name: " + nameVar + "</p>");
+        document.write("<p>Age: " + ageVar + "</p>");
+    </script>
+
+    <hr>
+
+    <!-- g_js_operators -->
+    <h2>7. Operators</h2>
+    <script>
+        let a = 5, b = 2;
+        document.write("<p>Sum: " + (a+b) + "</p>");
+        document.write("<p>Difference: " + (a-b) + "</p>");
+        document.write("<p>Product: " + (a*b) + "</p>");
+        document.write("<p>Quotient: " + (a/b) + "</p>");
+        document.write("<p>Remainder: " + (a%b) + "</p>");
+    </script>
+
+    <hr>
+
+    <!-- h_control_statements_bonus -->
+    <h2>8. Control Statements & Loops</h2>
+    <script>
+        let number = 12;
+        if(number > 10){
+            document.write("<p>Number is greater than 10</p>");
+        } else if(number === 10){
+            document.write("<p>Number is exactly 10</p>");
+        } else {
+            document.write("<p>Number is less than 10</p>");
+        }
+
+        document.write("<p>Numbers from 1 to 5: </p>");
+        for(let i=1; i<=5; i++){
+            document.write(i + " ");
+        }
+    </script>
+
+    <hr>
+
+    <!-- i_objects -->
+    <h2>9. Objects</h2>
+    <script>
+        let student = {name:"Manika", age:20, level:"Bachelor"};
+        document.write("<p>Name: " + student.name + "</p>");
+        document.write("<p>Age: " + student.age + "</p>");
+        document.write("<p>level: " + student.level + "</p>");
+    </script>
+
+    <hr>
+
+    <!-- j_js_handling_events -->
+    <h2>10. Event Handling</h2>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+    <p onmouseover="alert('Mouse Over Paragraph!')" style="width:200px; padding:10px; border:1px solid black;">Hover over me</p>
+    <input type="text" placeholder="Type something" onchange="alert('You typed: ' + this.value)">
+
+</body>
+</html>

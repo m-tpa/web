@@ -1,0 +1,25 @@
+<!-- Access an HTML element using JavaScript and change its content or color. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML Elements Example</title>
+</head>
+<body>
+
+    <h2 id="heading">JS HTML Elements Example</h2>
+    <p id="para">This paragraph will change when you click the button.</p>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <script>
+        function changeContent() {
+            document.getElementById("para").style.color = "blue";
+            document.getElementById("para").textContent = "Paragraph text has changed";
+            document.getElementById("heading").textContent = "Heading Changed";
+        }
+    </script>
+
+</body>
+</html>

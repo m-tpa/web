@@ -1,0 +1,35 @@
+<!-- Demonstrate how to use JavaScript with HTML using inline, internal, and external methods. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JS with HTML Example</title>
+
+    <!-- Internal JS -->
+    <script>
+        function internalJS() {
+            alert("This is Internal JS");
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Using JavaScript with HTML</h2>
+
+    <!-- Inline JS -->
+    <button onclick="alert('This is Inline JS')">Inline JS</button>
+
+    <br><br>
+
+    <!-- Internal JS -->
+    <button onclick="internalJS()">Internal JS</button>
+
+    <br><br>
+
+    <!-- External JS -->
+    <button onclick="externalJS()">External JS</button>
+
+    <script src="external.js"></script>  
+</body>
+</html>
